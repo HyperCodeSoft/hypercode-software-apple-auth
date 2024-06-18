@@ -1,4 +1,4 @@
-package com.accedia.apple.auth.user;
+package com.hypercode.apple.auth.user;
 
 public class AppleAuthorizationToken {
     private final String authorisationCode;

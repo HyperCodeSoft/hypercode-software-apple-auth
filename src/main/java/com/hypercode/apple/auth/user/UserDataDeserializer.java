@@ -1,4 +1,4 @@
-package com.accedia.apple.auth.user;
+package com.hypercode.apple.auth.user;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.interfaces.Claim;

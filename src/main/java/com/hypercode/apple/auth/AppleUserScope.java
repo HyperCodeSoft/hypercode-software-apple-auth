@@ -1,4 +1,4 @@
-package com.accedia.apple.auth;
+package com.hypercode.apple.auth;
 
 public enum AppleUserScope {
     EMAIL("email"),

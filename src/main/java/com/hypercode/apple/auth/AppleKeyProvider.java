@@ -1,4 +1,4 @@
-package com.accedia.apple.auth;
+package com.hypercode.apple.auth;
 
 import com.auth0.jwk.JwkException;
 import com.auth0.jwk.JwkProvider;

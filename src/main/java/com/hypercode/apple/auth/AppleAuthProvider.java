@@ -1,8 +1,8 @@
-package com.accedia.apple.auth;
+package com.hypercode.apple.auth;
 
-import com.accedia.apple.auth.user.AppleAuthorizationToken;
-import com.accedia.apple.auth.user.UserData;
-import com.accedia.apple.auth.user.UserDataDeserializer;
+import com.hypercode.apple.auth.user.AppleAuthorizationToken;
+import com.hypercode.apple.auth.user.UserData;
+import com.hypercode.apple.auth.user.UserDataDeserializer;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;

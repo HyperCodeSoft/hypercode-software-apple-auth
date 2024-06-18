@@ -1,4 +1,4 @@
-package com.accedia.apple.auth.key;
+package com.hypercode.apple.auth.key;
 
 import com.google.common.io.ByteStreams;
 

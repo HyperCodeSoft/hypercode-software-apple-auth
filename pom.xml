@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.accedia</groupId>
-    <artifactId>accedia-apple-auth</artifactId>
-    <version>0.1.0</version>
+    <groupId>com.hypercode</groupId>
+    <artifactId>hypercode-apple-auth</artifactId>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
 
-    <name>Apple Auth by Accedia</name>
+    <name>Apple Auth by Hypercode</name>
     <description>
         A light weight library with the goal to provide simple, out of the box Apple Authentication.
     </description>
@@ -18,12 +18,17 @@
 
     <developers>
         <developer>
-            <name>Lazar Lazarov</name>
-            <email>lazar.lazarov@accedia.com</email>
-            <organization>Accedia</organization>
-            <organizationUrl>http://www.accedia.com</organizationUrl>
+            <name>Ionut Doroftei</name>
+            <organization>Hypercode</organization>
+            <organizationUrl>https://www.hypercode.ro/</organizationUrl>
         </developer>
     </developers>
+
+    <properties>
+        <google-api-client.version>1.30.11</google-api-client.version>
+        <jwks-rsa.version>0.22.1</jwks-rsa.version>
+        <java-jwt.version>4.4.0</java-jwt.version>
+    </properties>
 
     <build>
         <plugins>
@@ -31,8 +36,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
 
@@ -61,44 +66,30 @@
                     </execution>
                 </executions>
             </plugin>
-
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-gpg-plugin</artifactId>-->
-<!--                <version>1.6</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <id>sign-artifacts</id>-->
-<!--                        <phase>verify</phase>-->
-<!--                        <goals>-->
-<!--                            <goal>sign</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
-
         </plugins>
     </build>
-
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Hypercode Apache Maven Packages</name>
+            <url>https://github.com/HyperCodeSoft/hypercode-software-apple-auth</url>
+        </repository>
+    </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>com.auth0</groupId>
             <artifactId>java-jwt</artifactId>
-            <version>3.10.3</version>
+            <version>${java-jwt.version}</version>
         </dependency>
-
         <dependency>
             <groupId>com.auth0</groupId>
             <artifactId>jwks-rsa</artifactId>
-            <version>0.11.0</version>
+            <version>${jwks-rsa.version}</version>
         </dependency>
-
         <dependency>
             <groupId>com.google.api-client</groupId>
             <artifactId>google-api-client</artifactId>
-            <version>1.30.9</version>
+            <version>${google-api-client.version}</version>
         </dependency>
     </dependencies>
-
-
 </project>

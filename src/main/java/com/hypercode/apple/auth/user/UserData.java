@@ -1,4 +1,4 @@
-package com.accedia.apple.auth.user;
+package com.hypercode.apple.auth.user;
 
 import java.time.Instant;
 
